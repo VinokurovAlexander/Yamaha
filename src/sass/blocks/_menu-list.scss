@@ -1,0 +1,32 @@
+.menu-list {
+  @include list-style;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212327;
+
+  text-transform: uppercase;
+
+}
+
+.menu-list__item {
+  position: relative;
+
+  box-sizing: border-box;
+  max-width: 215px;
+  padding: 39px 38px;
+
+  &:hover {
+    border-bottom: 3px solid #ee3b33;
+    cursor: pointer;
+  }
+}
+
+.menu-list__item:hover .sub-menu {
+  display: flex;
+  flex-flow: row wrap;
+}

@@ -1,0 +1,21 @@
+.sub-menu {
+  @include list-style;
+  position: absolute;
+  top: 126px;
+  left: -2px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  width: 1492px;
+}
+
+.sub-menu__item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  max-width: 340px;
+}
