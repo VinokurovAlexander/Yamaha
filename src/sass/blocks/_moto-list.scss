@@ -1,0 +1,31 @@
+.moto-list {
+  @include list-style;
+}
+
+.moto-list__item {
+  box-sizing: border-box;
+  margin-left: 168px;
+  margin-right: 190px;
+}
+
+.moto-list__main-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.moto-list__info {
+  width: 450px;
+}
+
+.moto-list__moto-image {
+  position: relative;
+
+  background-image: url("../img/bg-power.png");
+  background-repeat: no-repeat;
+}
+
+.moto-list__image {
+  margin-top: 58px;
+  padding-left: 8px
+}
