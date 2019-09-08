@@ -6,9 +6,12 @@
 
   display: none;
   flex-flow: row wrap;
-  justify-content: space-around;
 
+  box-sizing: border-box;
   width: 1492px;
+  padding: 0 99px;
+
+  border-bottom: 1px solid #dadfe6;
 }
 
 .sub-menu__item {
@@ -19,12 +22,29 @@
 
   box-sizing: border-box;
   max-width: 340px;
-  padding-bottom: 3px;
+  padding-top: 22px;
+  padding-bottom: 19px;
+  margin-right: 123px;
 
   &:hover {
-    padding-bottom: 0;
+    padding-bottom: 16px;
 
     border-bottom: 3px solid #ee3b33;
     cursor: pointer;
   }
+
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+.sub-menu__moto-name {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sub-menu__img {
+  margin-bottom: 16px;
 }
