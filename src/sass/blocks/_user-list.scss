@@ -1,24 +1,5 @@
-.user-list {
-  @include list-style;
-
-  display: flex;
-  flex-flow: row wrap;
-
-  font-family: "Oswald", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  color: #212327;
-
-  text-transform: uppercase;
-}
-
 .user-list__item {
-  box-sizing: border-box;
   max-width: 165px;
-  padding: 40px 20px;
-
-  &:hover {
-    border-bottom: 3px solid #ee3b33;
-    cursor: pointer;
-  }
+  padding: 0 20px;
+  padding-top: 43px;
 }
