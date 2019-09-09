@@ -16,7 +16,7 @@
   box-sizing: border-box;
 
   &:hover {
-    border-bottom: 3px solid #ee3b33;
+    border-bottom: 3px solid $color-main;
     cursor: pointer;
   }
 }
