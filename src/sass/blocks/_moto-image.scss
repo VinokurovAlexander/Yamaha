@@ -1,0 +1,61 @@
+.moto-image {
+  position: relative;
+
+  background-image: url("../img/bg-power.png");
+  background-repeat: no-repeat;
+}
+
+.moto-image__picture {
+  margin-top: 58px;
+  padding-left: 8px
+}
+
+.moto-image__btn {
+  content: "";
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background-color: #ee3b33;
+  box-shadow: 0 0 0 1px #fac3c1;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 8px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.moto-image__btn--left {
+  left: -5px;
+  top: 255px;
+}
+
+.moto-image__btn--top {
+  top: 70px;
+  left: 302px;
+}
+
+.moto-image__btn--right {
+  top: 249px;
+  right: 2px;
+}
