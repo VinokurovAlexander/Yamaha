@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+
+  box-sizing: border-box;
+  width: 209px;
+  padding: 18px 40px;
+
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: $color-main;
+  border: 3px solid $color-main;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: $color-main;
+
+  &:hover {
+    opacity: 1;
+    background-color: $color-main;
+    color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
