@@ -1,0 +1,50 @@
+.slider-list {
+  @include list-style;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 976px;
+  margin: 0 auto;
+}
+
+.slider-list__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-right: 170px;
+
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.slider-list__item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  transform: translate(-50%, 30%);
+
+  width: 13px;
+  height: 13px;
+
+  background-color: #c8c8c8;
+  border-radius: 50%;
+}
+
+.slider-list__icon {
+  fill: #d2d2d2;
+}
+
+.slider-list__icon--active {
+  fill: $color-main;
+}
