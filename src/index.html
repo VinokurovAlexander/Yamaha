@@ -122,33 +122,72 @@
       </ul>
       <ul class="page-main__slider slider-list">
         <li class="slider-list__item">
-          <svg class="slider-list__icon" width="28" height="23">
-            <use xlink:href="#icon-key-features"></use>
-          </svg>
-          Key features</li>
-        <li class="slider-list__item slider-list__item--active">
-          <svg class="slider-list__icon" width="16" height="28">
-            <use xlink:href="#icon-power"></use>
-          </svg>
-          Power
+          <input type="radio" name="description" class="visually-hidden slider-list__input" id="key-features">
+          <label class="slider-list__label" for="key-features">
+            <svg class="slider-list__icon" width="28" height="23">
+              <use xlink:href="#icon-key-features"></use>
+            </svg>
+            Key features
+          </label>
         </li>
         <li class="slider-list__item">
-          <svg class="slider-list__icon" width="28" height="26">
-            <use xlink:href="#icon-specs"></use>
-          </svg>
-          Specs</li>
+          <input type="radio" name="description" class="visually-hidden slider-list__input" id="power" checked>
+          <label class="slider-list__label" for="power">
+            <svg class="slider-list__icon slider-list__icon--power" width="16" height="30">
+              <use xlink:href="#icon-power"></use>
+            </svg>
+            Power
+          </label>
+        </li>
         <li class="slider-list__item">
-          <svg class="slider-list__icon" width="30" height="27">
-            <use xlink:href="#icon-speed"></use>
-          </svg>
-          Speed</li>
+          <input type="radio" name="description" class="visually-hidden slider-list__input" id="specs">
+          <label class="slider-list__label" for="specs">
+            <svg class="slider-list__icon" width="28" height="26">
+              <use xlink:href="#icon-specs"></use>
+            </svg>
+            Specs
+          </label>
+        </li>
         <li class="slider-list__item">
-          <svg class="slider-list__icon" width="28" height="27">
-            <use xlink:href="#icon-life"></use>
-          </svg>
-          Life</li>
+          <input type="radio" name="description" class="visually-hidden slider-list__input" id="speed">
+          <label class="slider-list__label" for="speed">
+            <svg class="slider-list__icon" width="30" height="27">
+              <use xlink:href="#icon-speed"></use>
+            </svg>
+            Speed
+          </label>
+        </li>
+        <li class="slider-list__item">
+          <input type="radio" name="description" class="visually-hidden slider-list__input" id="life">
+          <label class="slider-list__label" for="life">
+            <svg class="slider-list__icon slider-list__icon--life" width="28" height="27">
+              <use xlink:href="#icon-life"></use>
+            </svg>
+            Life
+          </label>
+        </li>
       </ul>
-      <section style="height: 300px"></section>
+      <section class="page_main__description description description--power">
+        <img class="description__image" width="320" height="359" src="img/engine.png" alt="Изображение двигателя">
+        <div class="description__wrapper">
+          <section class="description__item">
+            <h3 class="description__title">Cutting-edge Crossplane Engine</h3>
+            <p class="description__text">
+              The 998cc in-line 4-cylinder, crossplane  crankshaft engine features titanium fracture-split connecting rods, which are an industry first for a production motorcycle.
+            </p>
+          </section>
+          <section class="description__item">
+            <h3 class="description__title">Compact Stacked Transmission</h3>
+            <p class="description__text">
+              A 6-speed transmission has also been adopted to match the
+              new engine. The transmission "stacks" the input/output shafts to
+              centralize mass and to keep the overall engine size shorter front to
+              back, which optimizes engine placement in the frame for outstanding
+              weight balance.
+            </p>
+          </section>
+        </div>
+      </section>
     </main>
   </body>
 </html>
