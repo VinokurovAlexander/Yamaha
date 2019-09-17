@@ -1,0 +1,37 @@
+.spin-icon {
+  position: relative;
+
+  width: 19px;
+  height: 15px;
+
+  border: 2px solid #212327;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.spin-icon::after,
+.spin-icon::before {
+  position: absolute;
+  content: "";
+
+  border: 5px solid #212327;
+}
+
+.spin-icon::after {
+  right: 1px;
+  top: -2px;
+
+  border-right-width: 0;
+  border-top-width: 0;
+  border-left-color: transparent;
+}
+
+.spin-icon::before {
+  left: 1px;
+  bottom: -2px;
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-right-color: transparent;
+}

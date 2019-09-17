@@ -1,0 +1,23 @@
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  height: 514px;
+}
+
+.photos:hover .photos__image {
+  opacity: 0.3;
+}
+
+.photos:hover .photos__image:hover {
+  opacity: 1;
+}
+
+.photos__image {
+  transition: 0.8s opacity;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
