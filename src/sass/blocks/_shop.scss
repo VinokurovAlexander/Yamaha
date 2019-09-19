@@ -4,11 +4,75 @@
   display: flex;
   flex-wrap: wrap;
 
-  width: 745px;
+  width: 790px;
   margin: 0 auto;
 }
 
+.shop__image {
+  margin-bottom: 22px;
+}
+
+.shop__item {
+  margin-right: 103px;
+  padding: 2px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    padding: 0;
+
+    border: 2px solid rgb(189, 185, 185);
+    border-radius: 4px;
+  }
+}
+
+.shop__item--gloves {
+  margin-left: 28px;
+
+  .shop__image {
+    margin-top: 28px;
+  }
+}
+
+.shop__item--jacket {
+  margin-right: 119px;
+
+  .shop__image {
+    margin-bottom: 0;
+  }
+
+  .shop__product-name {
+    margin-left: 13px;
+    margin-top: -2px;
+    margin-bottom: 4px;
+  }
+
+  .shop__product-price {
+    margin-left: 13px;
+  }
+}
+
+.shop__item--helmet {
+  .shop__image {
+    margin-top: 10px;
+    margin-bottom: 19px;
+  }
+
+  .shop__product-name {
+    margin-left: 17px;
+    margin-bottom: 3px;
+  }
+
+  .shop__product-price {
+    margin-left: 16px;
+  }
+}
+
 .shop__product-name {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.2;
   color: #212327;
@@ -25,6 +89,8 @@
 }
 
 .shop__product-price {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.2;
   color: #8d9095;
