@@ -1,0 +1,41 @@
+.link-list {
+  @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  width: 740px;
+  height: 145px;
+}
+
+.link-list__item {
+  width: 115px;
+  margin-right: 51px;
+
+  &:nth-child(n + 16) {
+    margin-right: 0;
+  }
+}
+
+.link-list__item--long {
+  width: 125px;
+}
+
+.link-list__link {
+  font-size: 12px;
+  line-height: 27px;
+  color: #787e89;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
