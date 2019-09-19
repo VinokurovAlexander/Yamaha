@@ -8,13 +8,19 @@
 }
 
 .color-list__item {
+  margin-right: 22px;
+}
+
+.color-list__label {
+  display: block;
+
   width: 18px;
   height: 18px;
-  margin-right: 22px;
 
   border-radius: 50%;
   border: 2px solid #fffafa;
   box-shadow: 0 0 0 1px #cbcccf;
+  transition: all 0.5s ease;
 
   &:hover {
     cursor: pointer;
@@ -22,18 +28,18 @@
   }
 }
 
-.color-list__item--active {
+.color-list__input:checked + .color-list__label {
   box-shadow: 0 0 0 1px #f05149;
 }
 
-.color-list__item--blue-gray {
+.color-list__label--blue-gray {
   background: linear-gradient(#5c68b5 50%,#adacaa 50%);
 }
 
-.color-list__item--black-gray {
+.color-list__label--black-gray {
   background: linear-gradient(#545351 50%,#adacaa 50%);
 }
 
-.color-list__item--yellow-gray {
+.color-list__label--yellow-gray {
   background: linear-gradient(#f5cc22 50%,#383735 50%);
 }

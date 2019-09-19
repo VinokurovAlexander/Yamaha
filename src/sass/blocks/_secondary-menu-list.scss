@@ -1,0 +1,20 @@
+.secondary-menu-list {
+  @include list-style;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 414px;
+}
+
+.secondary-menu-list__link {
+  font-size: 10px;
+}
+
+.secondary-menu-list__item  {
+  margin-right: 24px;
+
+  &:nth-child(5n) {
+    margin-right: 0;
+  }
+}

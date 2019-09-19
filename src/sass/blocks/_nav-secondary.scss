@@ -1,0 +1,20 @@
+.nav-secondary {
+  display: flex;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 9px 177px;
+}
+
+.nav-secondary__copyright {
+  width: 265px;
+
+  font-size: 10px;
+  line-height: 27px;
+  color: #787e89;
+  text-transform: uppercase;
+}
+
+.nav-secondary__copyright {
+  margin: 0;
+}
