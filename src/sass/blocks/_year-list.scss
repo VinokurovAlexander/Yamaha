@@ -15,17 +15,19 @@
 .year-list__item {
   width: 30px;
   padding: 0 15px;
+}
 
+.year-list__label {
   &:hover {
     cursor: pointer;
     color: $color-main;
   }
 }
 
-.year-list__item--border {
-  border-right: 2px solid #eaecf1;
+.year-list__input:checked + .year-list__label {
+  color: $color-main;
 }
 
-.year-list__item--active {
-  color: $color-main;
+.year-list__item--border {
+  border-right: 2px solid #eaecf1;
 }
