@@ -28,7 +28,9 @@
   }
 }
 
-.color-list__input:checked + .color-list__label {
+#blue-gray:checked ~ .moto-description__info label[for="blue-gray"],
+#black-gray:checked ~ .moto-description__info label[for="black-gray"],
+#yellow-gray:checked ~ .moto-description__info label[for="yellow-gray"] {
   box-shadow: 0 0 0 1px #f05149;
 }
 

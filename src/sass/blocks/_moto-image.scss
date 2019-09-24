@@ -4,13 +4,11 @@
   width: 593px;
   height: 498px;
 
-  background-image:
-    url("../img/bg-power.png"),
-    url("../img/moto-image-big-YZF-R1.png");
   background-repeat: no-repeat;
   background-position:
     left top,
     right bottom 11%;
+  transition: background-image 0.5s ease;
 }
 
 .moto-image__picture {

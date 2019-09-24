@@ -12,3 +12,21 @@
 .moto-description__info {
   width: 450px;
 }
+
+#blue-gray:checked ~ .moto-description__image {
+  background-image:
+    url("../img/bg-power.png"),
+    url('../img/moto_blue.png');
+}
+
+#black-gray:checked ~ .moto-description__image {
+  background-image:
+    url("../img/bg-power.png"),
+    url('../img/moto_black.png');
+}
+
+#yellow-gray:checked ~ .moto-description__image {
+  background-image:
+    url("../img/bg-power.png"),
+    url('../img/moto_yellow.png');
+}
