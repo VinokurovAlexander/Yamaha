@@ -1,0 +1,164 @@
+.description-list {
+  @include list-style;
+}
+
+.description-list__item {
+  content: "";
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  background-color: $color-main;
+  box-shadow: 0 0 0 1px #fac3c1;
+  transition: all 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    border-color: $color-main;
+    box-shadow: 0 0 0 1px $color-main;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 8px;
+    height: 2px;
+
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.description-list__item:hover .description-list__wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.description-list__item:hover::after,
+.description-list__item:hover::before {
+  background-color: $color-main;
+}
+
+.description-list__wrapper {
+  position: absolute;
+  z-index: 25;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 440px;
+
+  border-top: 3px solid $color-main;
+  border-bottom: 3px solid $color-main;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.description-list__item--exhaust {
+  left: -5px;
+  top: 255px;
+}
+
+.description-list__item--exhaust .description-list__wrapper {
+  bottom: -156px;
+  left: 52px;
+}
+
+.description-list__item .description-list__wrapper::after {
+  content: "";
+  position: absolute;
+
+  border: 20px solid $color-main;
+}
+
+.description-list__item--exhaust .description-list__wrapper::after {
+  top: 248px;
+  left: -20px;
+
+  border-left-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.description-list__item--look {
+  top: 70px;
+  right: 100px;
+}
+
+.description-list__item--suspension {
+  top: 249px;
+  right: 2px;
+}
+
+.description-list__item--suspension .description-list__wrapper {
+  bottom: -156px;
+  right: 52px;
+}
+
+.description-list__item--suspension .description-list__wrapper:after {
+  top: 248px;
+  right: -20px;
+
+  border-right-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.description-list__item--look .description-list__wrapper {
+  top: -8px;
+  right: 52px;
+
+  border-top-width: 0;
+}
+
+.description-list__item--look .description-list__wrapper::after {
+  top: 0;
+  right: -20px;
+
+  border-right-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.description-list__title {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  padding-top: 11px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $color-main;
+}
+
+.description-list__text {
+  margin: 0;
+  padding: 10px;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #212327;
+  background-color: #ffffff;
+}
