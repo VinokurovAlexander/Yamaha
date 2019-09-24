@@ -1,0 +1,14 @@
+.moto-description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+  margin-left: 168px;
+  margin-right: 190px;
+}
+
+.moto-description__info {
+  width: 450px;
+}
