@@ -47,8 +47,7 @@
 }
 
 .description-list__item:hover .description-list__wrapper {
-  visibility: visible;
-  opacity: 1;
+  display: flex;
 }
 
 .description-list__item:hover::after,
@@ -60,16 +59,13 @@
   position: absolute;
   z-index: 25;
 
-  display: flex;
+  display: none;
   flex-direction: column;
 
   width: 440px;
 
   border-top: 3px solid $color-main;
   border-bottom: 3px solid $color-main;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease;
 }
 
 .description-list__item--exhaust {

@@ -65,9 +65,9 @@
     </header>
     <main class="page-main">
       <section class="page-main__description moto-description">
-        <input class="moto-description__input visually-hidden" type="radio" name="moto-color" id="blue-gray" >
+        <input class="moto-description__input visually-hidden" type="radio" name="moto-color" id="blue-gray" checked>
         <input class="moto-description__input visually-hidden" type="radio" name="moto-color" id="black-gray">
-        <input class="moto-description__input visually-hidden" type="radio" name="moto-color" id="yellow-gray" checked>
+        <input class="moto-description__input visually-hidden" type="radio" name="moto-color" id="yellow-gray">
         <section class="moto-description__image moto-image">
           <ul class="moto-description__list description-list">
             <li class="description-list__item description-list__item--exhaust">
@@ -233,7 +233,13 @@
         <img class="photos__image" width="351" height="257" src="img/photo-motocycle-blue-black.png" alt="Фотография мотоцикла"></img>
       </section>
       <section class="page-main__moto-360-view moto-360-view">
-        <img class="moto-360-view__image" width="840" height="559" src="img/moto-360-view.png" alt="Изображение мотоцикла в 360">
+        <!-- <img class="moto-360-view__image" width="840" height="559" src="img/moto-360-view.png" alt="Изображение мотоцикла в 360"> -->
+        <div
+             class="cloudimage-360"
+             data-folder="../img/360view/"
+             data-filename="2015-Yamaha-YZF-R1-EU-Race-Blu-VR360-{index}.jpg"
+             data-amount="36"
+        ></div>
         <a class="moto-360-view__btn" href="#">
           <div class="moto-360-view__icon spin-icon">
             <span class="visually-hidden">Иконка с крутящимися стрелками</span>
@@ -375,5 +381,7 @@
         </ul>
       </nav>
     </footer>
+        <script src="js/main.js"></script>
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script>
   </body>
 </html>

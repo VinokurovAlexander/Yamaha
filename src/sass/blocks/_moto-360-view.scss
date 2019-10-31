@@ -4,7 +4,16 @@
   align-items: center;
 
   width: 916px;
+  min-height: 519px;
   margin: 0 auto;
+
+  background-image: url('../img/moto-360-view.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .moto-360-view__btn {
